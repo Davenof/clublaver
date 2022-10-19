@@ -913,6 +913,7 @@ aside blockquote cite {
 
 #membership div figure figcaption {
     margin: 15px;
+    text-align: center;
 }
 
 #membership div figure figcaption .name {
