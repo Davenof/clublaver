@@ -78,6 +78,12 @@ header .topnav ul li {
     display: inline;
 }
 
+@media only screen and (max-width: 354px) {
+    header .topnav .contact a:nth-child(2) {
+        display: none;
+    }
+}
+
 @media only screen and (min-width: 768px) {
     header .topnav {
         align-items: center;
@@ -282,14 +288,16 @@ header .topnav ul li {
 
 .text .textone {
     font-family: 'Arial Black', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
 }
 
 .text .texttwo {
     color: #000;
+    font-weight: 400;
 }
 
 .text .goudy-old {
-    font-family: 'Goudy Old Style', serif;
+    font-family: 'Goudy Old Style', cursive, serif;
     font-weight: 100;
     margin-top: 10px;
 }
@@ -894,7 +902,7 @@ aside blockquote cite {
 }
 
 #membership div figure {
-    float: none;
+    float: right;
 }
 
 #membership div figure img {
@@ -977,12 +985,7 @@ aside blockquote cite {
    
 /* About Responsive */
 @media only screen and (min-width: 520px) {
-    /* MEMBERSHIP */  
-    #membership div figure {
-        float: right;
-        margin-left: 15px;
-    }
-    
+    /* MEMBERSHIP */    
     #membership div figure figcaption {
         text-align: center;
     }
@@ -1204,7 +1207,7 @@ input[type=submit]:hover {
 }
 
 #gallery figure figcaption {
-    font-family: 'Gouldy Old Style', cursive;
+    font-family: 'Goudy Old Style', cursive;
     text-align: center;
 }
 
@@ -1225,7 +1228,6 @@ input[type=submit]:hover {
 
 #gallery #load-button button:hover {
     background-color: #f83549;
-    font-weight: normal;
 }
 
 #gallery #onload {
