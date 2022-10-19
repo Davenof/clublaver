@@ -78,7 +78,7 @@ header .topnav ul li {
     display: inline;
 }
 
-@media only screen and (max-width: 354px) {
+@media only screen and (max-width: 359px) {
     header .topnav .contact a:nth-child(2) {
         display: none;
     }
