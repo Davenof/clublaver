@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Laver</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="header">
+        <!-- Top Nav -->
+        <div class="topnav">
+            <!-- Contact -->
+            <div class="contact">
+                <a href="mailto:clublaver@cl.club"><i class="fa-solid fa-envelope"></i> - clublaver@cl.club </a>
+                <a href="tel:000-111-222-333x"><i class="fa-solid fa-phone"></i> - 000-111-222-333x</a>
+                <!-- Social Icons -->
+                <ul class="social-icons" id="social-iconsone">
+                    <li class="social-icon"><a href="https://www.facebook.com/davenof/" target="_blank" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li class="social-icon"><a href="https://twitter.com/davenof" target="_blank" title="Twitter"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a></li>
+                    <li class="social-icon"><a href="https://www.linkedin.com/in/david-ofili-7b9a752a/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+            <!-- Search Form -->
+            <div class="search">
+                <form method="get">
+                    <input type="text" id="search" name="search" placeholder="&#128269; Press enter key after typing">
+                </form>
+            </div>
+            <!-- Social Icons -->
+            <ul class="social-icons" id="social-iconstwo">
+                <li class="social-icon"><a href="https://www.facebook.com/davenof/" target="_blank" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li class="social-icon"><a href="https://twitter.com/davenof" target="_blank" title="Twitter"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a></li>
+                <li class="social-icon"><a href="https://www.linkedin.com/in/david-ofili-7b9a752a/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            </ul>
+        </div>
+        <!-- Menu Nav -->
+        <nav class="mobilenav">
+            <a href="index.html" class="active-menu"><img src="img/logo.jpg" width="525" height="100" alt="Logo"></a>
+            <!-- Mobile Nav Items -->
+            <div id="mobilenav-menu">
+                <a href="about.html">About Us</a>
+                <a href="about.html#membership">Membership</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+            <!-- "Hamburger Toggle Function -->
+            <a href="javascript:void(0);" class="icon" onclick="mobileNavFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <!-- Desktop Nav Items -->
+            <div id="desktopnav-menu">
+                <a href="contact.html">Contact Us</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="about.html#membership">Membership</a>
+                <a href="about.html">About Us</a> 
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="slider-section" id="home">
+            <div class="slider-container">
+                <!-- Slider -->
+                <figure class="slider-image fade" id="slider-one">
+                    <img src="img/slider-a.jpg" width="1600" height="700" alt="Slider Image One">
+                    <figcaption class="slider-caption">
+                        <div class="text">
+                            <h2 class="textone">SELFIE AFTERNOON</h2>
+                            <div class="slide-up texttwo">FUN BEYOND THE CAMERAS</div>
+                            <div class="goudy-old">The best afternoon event of the week</div>
+                            <button class="read-more" onclick="window.location.href='#';">READ MORE</button>
+                        </div>
+                    </figcaption>
+                </figure>
+                <figure class="slider-image fade" id="slider-two">
+                    <img src="img/slider-b.jpg" width="1600" height="700" alt="Slider Image Two">
+                    <figcaption class="slider-caption">
+                        <div class="text">
+                            <h2 class="textone">SNOW GOLF</h2>
+                            <div class="slide-up texttwo">GOT PLANS FOR WINTER?</div>
+                            <div class="goudy-old">Be a golfer or not, you'll love this one</div>
+                            <button class="read-more" onclick="window.location.href='#';">READ MORE</button>
+                        </div>
+                    </figcaption>
+                </figure>
+                <figure class="slider-image fade" id="slider-three">
+                    <img src="img/slider-c.jpg" width="1600" height="700" alt="Slider Image Three">
+                    <figcaption class="slider-caption">
+                        <div class="text">
+                            <h2 class="textone">GIVE-BACK SATURDAY</h2>
+                            <div class="slide-up texttwo">BUILDING OUR COMMUNITY</div>
+                            <div class="goudy-old">Be a part of your community's story</div>
+                            <button class="read-more" onclick="window.location.href='#';">READ MORE</button>
+                        </div>
+                    </figcaption>
+                </figure>
+
+                 <!-- Next and Previous Buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+
+            <!-- Navigational Dots -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </section>
+
+        <!-- Main Content Area -->
+        <div class="content-area" id="content-area">
+            <!-- Day, Time, and Venu Cards -->
+            <section id="dtv-cards">
+                <div class="dtv-flex">
+                    <div class="dtv-card dtvcard-one">
+                        <i class="fa-regular fa-calendar dtv-icon"></i>
+                        <h3>Meeting Days</h3>
+                        <p>
+                            Tuesdays, Forthnightly <br>
+                            Saturdays, Weekly
+                        </p>
+                        <span>READ MORE</span>
+                    </div>
+                    <div class="dtv-card dtvcard-two">
+                        <i class="fa-regular fa-clock dtv-icon"></i>
+                        <h3>Meeting Time</h3>
+                        <p>
+                            5:00pm - 7:00pm | Tuesdays <br>
+                            11:00am - 2:00pm | Saturdays
+                        </p>
+                        <span>READ MORE</span>
+                    </div>
+                    <div class="dtv-card dtvcard-three">
+                        <i class="fa-solid fa-location-pin dtv-icon"></i>
+                        <h3>Meeting Venue</h3>
+                        <p>
+                            Winton House | Tuesdays <br>
+                            Community Square | Saturdays
+                        </p>
+                        <span>READ MORE</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Welcome -->
+            <section id="welcome">
+                <div class="welcome-container">
+                    <h2>WELCOME</h2>
+                    <div>
+                        <figure>
+                            <img src="img/jackson.jpg" width="300" height="350" alt="President">
+                            <figcaption>
+                                <span class="name">Jackson Doe</span> <br>
+                                Enjoyment President
+                            </figcaption>
+                        </figure>
+                        <p>
+                            Hello! We are ClubLaver, the only public-rated five-star fun social club. We are no doubt the people's 
+                            club when is comes to finding a common ground between life and fun.
+                        </p>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, 
+                        nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec 
+                        congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, 
+                        facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus 
+                        congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis 
+                        imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros 
+                        non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Club's Monthly Special -->
+            <section id="special">
+                <h2><span class="border-bottom">CLUB'S</span> MONTHLY <span class="font-color">SPECIAL</span></h2>
+                <div class="special-flex">
+                    <!-- First Column | African -->
+                    <article class="african">
+                        <div class="african-container">
+                            <h3>African Salad</h3>
+                            <p>Relishing the goodies of the Motherland</p>
+                            <button>Read More</button>
+                        </div>
+                    </article>
+                    <!-- Second Column | Events-->
+                    <article class="events">
+                        <div class="events-container">
+                            <figure>
+                                <img src="img/chef.jpg" width="100" height="100" alt="Culinary Image">
+                            </figure>
+                            <div class="events-text">
+                                <div class="events-innergrid">
+                                    <h3>Culinary</h3>
+                                    <p>FREE</p>
+                                </div>
+                                <p>
+                                    A two-day chef and culinary consultancy seminar with industry experts. 
+                                    <a href="#">Read more</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="events-container">
+                            <figure>
+                                <img src="img/processor.jpg" width="100" height="100" alt="Processor Image">
+                            </figure>
+                            <div class="events-text">
+                                <div class="events-innergrid">
+                                    <h3>Digital</h3>
+                                    <p>£19.99</p>
+                                </div>
+                                <p>
+                                    Learn the most sought-after digital skills in 2022 with Jeff Kawasaki. 
+                                    <a href="#">Read more</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="events-container">
+                            <figure>
+                                <img src="img/handshake.jpg" width="100" height="100" alt="Handshake Image">
+                            </figure>
+                            <div class="events-text">
+                                <div class="events-innergrid">
+                                    <h3>Business</h3>
+                                    <p>£12.59</p>
+                                </div>
+                                <p>
+                                    A-Z of a success business. From setting up to scaling up in all ramifications. 
+                                    <a href="#">Read more</a>
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Survey -->
+            <section id="survey">
+                <div class="survey-flex">
+                    <div class="survey-text">
+                        <h3>Dubai Vacation Survey</h3>
+                        <p>Take part in the vacation survey to win an all-expenses-paid trip to Dubai next summer.</p>
+                    </div>
+                    <button>
+                        BEGIN SURVEY
+                    </button>
+                </div>
+            </section>    
+            
+            <!-- Jumeirah Summer -->
+            <article class="dubai-flex">
+                <div class="dubai-text">
+                    <h3>Summer at Jumeirah Beach</h3>
+                    <p>
+                        PineappleLorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum 
+                        interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, 
+                        ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, 
+                        facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. 
+                    </p>
+                </div>
+                <figure>
+                    <img src="img/dubai.jpg" width="1000" height="713" alt="Jemeirah Beach" title="Jumeirah Beach Hotel">
+                </figure>
+            </article>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="footer-wrapper">
+            <!-- Quick Links -->
+            <div class="highlights">
+                <h3>QUICK LINKS</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="about.html#membership">Membership</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <!-- Code Validation -->
+            <div class="validation">
+                <h3>CODE VALIDATION</h3>
+                <p>Codes are validated with <a href="https://www.w3.org/" target="_blank">W3C</a>'s 
+                    validators (<a href="https://validator.w3.org/" target="_blank">HTML</a>, 
+                    <a href="https://jigsaw.w3.org/css-validator/" target="_blank">CSS</a>). 
+                </p>
+                <p>
+                    <a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+                        <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+                    </a>
+                </p>
+                <p>
+                    <i class="fa-solid fa-star"></i> <a href="https://github.com/Davenof/clublaver" target="_blank">Star on GitHub</a>
+                </p>
+            </div>
+            <!-- Disclaimer -->
+            <div class="disclaimer">
+                <h3>DISCLAIMER</h3>
+                <p>
+                    The concept of ClubLaver is 100% fictitious. Any form of resemblance between any element or part of this website 
+                    and a real life organisation, thing, or person is 100% unintentional. This website is a result of personal practice.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
